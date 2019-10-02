@@ -9,7 +9,8 @@ Page({
   },
 
   /**
-   * 生命周期函数--监听页面加载
+   * 页面加载，先获取本地缓存的 openid，到时候得修改成 unionid，
+   * 如果获取到的为空，则调用云函数 login 获取 openid（unionid）
    */
   onLoad: function(options) {
     var openid = wx.getStorageSync('openid')
@@ -36,12 +37,17 @@ Page({
       })
     }
   },
-
+  /**
+   * 获取到用户所点消息的页面路径 path 和对应的参数 query
+   */
   handleContact(e) {
     console.log(e.detail.path)
     console.log(e.detail.query)
   },
-
+  /**
+   * 给用户发送客服消息，回复图片+文字
+   * 这里还需要接入芝麻小客服，https://xiaokefu.com.cn/
+   */
   send() {
     wx.cloud.callFunction({
       name: 'sendImage',

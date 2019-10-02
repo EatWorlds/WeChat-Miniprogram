@@ -15,6 +15,8 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
+  // https://github.com/wx-plugin/image-cropper，我把裁剪图片的这个去掉了
+  // 不需要的话，删掉相关的内容就行
   onLoad: function(options) {
     this.cropper = this.selectComponent("#image-cropper");
     this.setData({

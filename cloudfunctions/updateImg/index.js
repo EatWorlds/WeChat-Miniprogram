@@ -2,7 +2,10 @@
 const cloud = require('wx-server-sdk')
 
 cloud.init()
+// 上传的图片是临时素材，会过期，所以得用触发器来调用云函数进行自动更新
 
+// 更新之后的素材会有一个 MEDIA_ID ，把这个写入到云数据库中
+// 回复图片的时候就是回复这个 MEDIA_ID
 // 云函数入口函数
 exports.main = async (event, context) => {
   const fileID = 'cloud://py-b6gxa.7079-py-b6gxa-1259343682/gzh-白色背景.jpg'
