@@ -1,0 +1,11 @@
+<view>
+  <block wx:for="{{list}}" wx:key="unique">
+    <view class="list" bindtap="toKnow" data-tag='{{item.tag}}'>
+      <image src='{{item.img}}' mode="aspectFit" class="img"></image>
+      <view class="column">
+        <view class="text">{{item.title}}</view>
+        <view class="tips">{{item.desc}}</view>
+      </view>
+    </view>
+  </block>
+</view>

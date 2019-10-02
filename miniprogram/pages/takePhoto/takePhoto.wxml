@@ -1,0 +1,12 @@
+<camera device-position="{{position}}" flash="off" binderror="error" style="width: 100%; height: 300px;">
+  <cover-view class="change">
+    <cover-image class="flip" src='../../images/Flip.png' bindtap="flip" ></cover-image>
+  </cover-view>
+  <cover-view class="center">
+    <cover-image style='width:200px;height:200px;top:60px' src="../../images/ic_camera_person.png"></cover-image>
+  </cover-view>
+  
+</camera>
+<button type="primary" bindtap="takePhoto" class="takePhoto">拍照</button>
+<share-box isCanDraw="{{isCanDraw}}" bind:initData="createShareImage" />
+<dialog-modal isShow="{{isModal}}" title="提示" content="您未开启摄像头的权限，请点击确定去开启权限！" confirmType="openSetting" />

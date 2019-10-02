@@ -1,0 +1,15 @@
+.center {
+  margin: 0 auto;
+  text-align: center;
+}
+
+tips::before {
+  background: '../../images/green_hook.png';
+  transform: scale(1);
+  position: absolute;
+  left: -160rpx;
+}
+.know{
+  width: 80%;
+  margin-top: 15rpx;
+}

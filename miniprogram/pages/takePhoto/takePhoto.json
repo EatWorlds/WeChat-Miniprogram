@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "share-box": "/components/shareBox/index",
+    "dialog-modal": "/components/dialogModal/index"
+  }
+}

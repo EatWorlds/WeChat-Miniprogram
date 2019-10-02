@@ -1,0 +1,10 @@
+<!--miniprogram/pages/know/know.wxml-->
+<view class="center">
+  <view>最佳拍照姿势</view>
+  <image src="../../images/sample_photo.jpg" mode="aspectFit"></image>
+  <view class="tips">头部居中，正对镜头</view>
+  <view class="tips">站在白色墙前</view>
+  <view class="tips">光线充足不逆光</view>
+  <button type="primary" bindtap="toTakePhoto" class="know">拍摄证件照</button>
+  <button type="default" bindtap="chooseImage" class="know">选取照片</button>
+</view>

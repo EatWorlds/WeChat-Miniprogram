@@ -1,0 +1,2 @@
+<!--miniprogram/pages/preview/preview.wxml-->
+<image src="{{image}}" mode="aspectFit" class="image"></image>

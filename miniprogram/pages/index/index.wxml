@@ -1,0 +1,17 @@
+<!--miniprogram/pages/index/index.wxml-->
+<view class="container">
+  <view class="center">
+    <image src="../../images/home_sample.png" mode="aspectFit">
+    </image>
+  </view>
+  <view class="item" bindtap="toChoose">
+    <image src="../../images/ic_camera.png" mode="aspectFit" class="icon">
+    </image>
+    <view class="item-text">
+      <view class="text">拍摄证件照</view>
+      <view class="tips">这里是解释</view>
+    </view>
+  </view>
+</view>
+
+<button open-type="contact" bindcontact="handleContact" bindtap="send">联系客服</button>

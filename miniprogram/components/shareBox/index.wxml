@@ -1,0 +1,13 @@
+<view class="share-wrap" wx:if="{{visible}}" catchtouchmove="preventDefault">
+  <view class="share-back" bindtap="handleClose"></view>
+  <view class="share-container">
+    <view class="close" bindtap="handleClose" data-ptpid="ebe9-1656-ad6a-462e"></view>
+    <image mode="widthFix" src="{{sharePath}}" class="share-image" />
+    <view class="share-tips">点击上传，生成证件照</view>
+    <view class="save-btn" bindtap="handlePhotoSaved" ></view>
+    <button class="btn-start" bindtap="handlePhotoSaved" data-ptpid="4095-16fd-bc97-4868">
+      <text class="text">上传</text>
+    </button>
+  </view>
+</view>
+<dialog-modal isShow="{{isModal}}" title="提示" content="您未开启保存图片到相册的权限，请点击确定去开启权限！" confirmType="openSetting" />
